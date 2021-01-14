@@ -9,7 +9,7 @@ from setuptools import find_packages
 requirements = [
     'pandas',
     'bs4',
-    'lxml'
+    'lxml',
     'numpy',
     'requests',
     'PyMySQL',

@@ -1,4 +1,6 @@
 from requests import get
+
+
 class IEXBase:
 
     _TOKENS = {

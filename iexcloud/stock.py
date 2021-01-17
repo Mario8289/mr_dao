@@ -3,7 +3,7 @@ from typing import AnyStr
 import logging
 from pandas import DataFrame
 
-from iexcloud.base import IEXBase
+from casiexcloud.base import IEXBase
 
 
 class Stock(IEXBase):
@@ -20,7 +20,8 @@ class Stock(IEXBase):
         self.logger.info(f"API Call: {api_call}")
 
         data = self.get_json(api_call)
-        return DataFrame(data['balancesheet'])
+
+        return DataFrame(data.get('balancesheet', dict()))
 
     def get_cashflow(self, symbol: AnyStr, period: AnyStr = None, last: int = None):
         query_parameters: str = self.get_query_parameters(period=period, last=last)
@@ -30,7 +31,7 @@ class Stock(IEXBase):
         self.logger.info(f"API Call: {api_call}")
 
         data = self.get_json(api_call)
-        return DataFrame(data["cashflow"])
+        return DataFrame(data.get("cashflow", dict()))
 
     def get_financials(self, symbol: AnyStr, period: AnyStr = None, last: int = None):
         query_parameters: str = self.get_query_parameters(period=period, last=last)
@@ -40,7 +41,7 @@ class Stock(IEXBase):
         self.logger.info(f"API Call: {api_call}")
 
         data = self.get_json(api_call)
-        return DataFrame(data["financials"])
+        return DataFrame(data.get("financials", dict()))
 
     def get_income_statement(self, symbol: AnyStr, period: AnyStr = None, last: int = None):
 
@@ -51,7 +52,7 @@ class Stock(IEXBase):
         self.logger.info(f"API Call: {api_call}")
 
         data = self.get_json(api_call)
-        return DataFrame(data["income"])
+        return DataFrame(data.get("income", dict()))
 
 
 if __name__ == "__main__":

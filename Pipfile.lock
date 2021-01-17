@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0eb9e94d3e2a1db1bba870038c36b4c75a09488797466c4824b70bcf5b2b73fd"
+            "sha256": "cd9bf7c06594cdafa3c433760b48c70c280568b2fc575caf85df6da4b883b919"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -401,10 +401,10 @@
         },
         "nbformat": {
             "hashes": [
-                "sha256:43e73e87342ab22fa51f0b564dafdcd8fdcce1db30f11655e2e1a2cbddd8019f",
-                "sha256:ce5d4d7989d85d4c59631d84fed475f899ac637bd33f100737d796af20b47ddd"
+                "sha256:1d223e64a18bfa7cdf2db2e9ba8a818312fc2a0701d2e910b58df66809385a56",
+                "sha256:3949fdc8f5fa0b1afca16fb307546e78494fa7a7bceff880df8168eafda0e7ac"
             ],
-            "version": "==5.1.1"
+            "version": "==5.1.2"
         },
         "nest-asyncio": {
             "hashes": [
@@ -698,6 +698,7 @@
                 "sha256:f1e88b30da8163215eab643962ae9d9252e47b4ea53404f2c4f10f24e70ddc62",
                 "sha256:f8191fef303025879e6c3548ecd8a95aafc0728c764ab72ec51a0bdf0c91a341"
             ],
+            "index": "pypi",
             "version": "==1.3.22"
         },
         "terminado": {

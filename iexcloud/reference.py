@@ -21,6 +21,8 @@ class Reference(IEXBase):
 
         data = self.get_json(api_call)
 
+        df.name = "international_symbols"
+
         return DataFrame(data)
 
     def get_us_symbols(self):
@@ -33,6 +35,8 @@ class Reference(IEXBase):
 
         data = self.get_json(api_call)
 
+        df.name = "us_symbols"
+        
         return DataFrame(data)
 
     def get_international_exchanges(self):
@@ -45,6 +49,8 @@ class Reference(IEXBase):
 
         data = self.get_json(api_call)
 
+        df.name = "international_exchanges"
+
         return DataFrame(data)
 
     def get_us_exchanges(self):
@@ -56,6 +62,8 @@ class Reference(IEXBase):
         self.logger.info(f"API Call: {api_call}")
 
         data = self.get_json(api_call)
+
+        df.name = "us_exchanges"
 
         return DataFrame(data)
 

@@ -3,7 +3,7 @@ from typing import AnyStr
 import logging
 from pandas import DataFrame
 
-from casiexcloud.base import IEXBase
+from iexcloud.base import IEXBase
 
 
 class Stock(IEXBase):

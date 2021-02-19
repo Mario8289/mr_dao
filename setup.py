@@ -20,13 +20,13 @@ setup_requirements = []
 
 
 setup(
-    name='api_wrappers',
+    name='mr_dao',
     version='0.0.1',
     description='This package provides a wrapper around commercial apis',
-    url='https://github.com/Mario8289/api_wrappers',
+    url='https://github.com/Mario8289/mr_dao',
     author="Anthony Marriott",
     author_email='amarriott289@gmail.com',
-    packages=find_packages(include=['api_wrappers', 'api_wrappers.*']),
+    packages=find_packages(include=['mr_dao', 'mr_dao.*']),
     install_requires=requirements,
     zip_safe=False,
 )
